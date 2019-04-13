@@ -9,3 +9,5 @@ Second Edition: http://find.galegroup.com/ecco/eToc.do?sort=DateAscend&inPS=true
 Full text of Third Edition (Oxford): http://ota.ox.ac.uk/text/4930.html
 
 http://ota.ox.ac.uk/desc/4930
+
+Includes a <div class="preface"> tag -- update style sheet

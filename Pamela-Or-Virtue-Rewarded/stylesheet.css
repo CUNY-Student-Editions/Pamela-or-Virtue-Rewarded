@@ -1,47 +1,239 @@
 
 
-/* General heading styles */
-h1, h2, h3, h4 {
-    text-align: center;
+/* Body */
+body {
+    display: block;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    line-height: 1.5em;
+    margin: 2em auto 3em;
+    padding: 0em 1.5em 0em;
 }
 
-.volume h1, .chapter h1, .letter h1 {
+/* Basic heading styles */
+h1, h2, h3, h4 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 2em;
     font-variant: small-caps;
-    margin-top: 1em;
+    margin: .67em 0em;
+}
+h2 {
+    font-size: 1.5em;
+    margin: .83em 0em;
+}
+h3 {
+    font-size: 1.17em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1em 0em 2em;
+}
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
 }
 .subtitle {
     font-style: italic;
+    font-size: 1.17em;
+    margin: 0em auto 1em;
 }
 
-/* General paragraph styles */
+/* ==General paragraph styles== */
 p {
-    text-indent: 1em;
+    font-size: 1em;
+    text-indent: 2em;
+    margin: 0em auto 1em;
 }
 p.first {
+    text-indent: 0em;
+}
+
+/* Block Quotations */
+div.blockquote {
+    font-size: 1em;
+    margin: 1.5em auto 0;
+    max-width: 85%;
+}
+
+
+
+/* ==General Divs== */
+div.section, div.chapter, div.article {
+    display: block;
+    margin-bottom: 2em
+}
+
+/* ==Poetry==
+Wrap poems in <div class="poem"> tags and <div class="stanza"> tags when appropriate.
+Treat lines as <p> to allow for hanging indents when text is re-sized.
+*/
+div.poem {
+    display: block;
+    margin: 0 auto 1.5em;
+
+}
+.poem h1 {
+    font-size: 1.5em;
+    font-style: bold;
+    text-align: center;
+}
+.poem h2 {
+    font-size: 1em;
+    font-style: bold;
+    text-align: center;
+}
+div.stanza {
+    margin: 0 auto 1.5em;
+}
+div.stanza > p {
+    display: block;
+    max-width: 60%
+    font-style: italic;
+    margin: 0em 20% 0em 20%;
+    text-align: left;
+    text-indent: -1em;
+    padding-left: 1em;
+    white-space: pre-wrap;
+}
+div.stanza-italics > p {
+    display: block;
+    max-width: 60%
+    font-style: italic;
+    margin: 0em 20% 0em 20%;
+    text-align: left;
+    text-indent: -1em;
+    padding-left: 1em;
+    white-space: pre-wrap;
+}
+div.stanza-italics strong {
+    font-style: normal;
     text-indent: -1em;
 }
 
 /* Letters */
+div.letter {
+    padding-bottom: 2em;
+}
+.letter > h1 {
+    font-variant: small-caps;
+    margin-bottom: 1em; 
+}
 .salutation {
     font-style: italic;
     text-indent: 1em;
+    margin-bottom: 1em;
 }
 .signature {
     font-style: italic;
+    margin-bottom: 1em;
     text-align: right;
 }
-.signature em, .salutation em {
+.signature strong, .salutation strong {
     font-variant: small-caps;
 }
-div.postscript,section.postscript {
+div.postscript {
     margin-left: 3em;
+}
+div.postscript > p {
+    text-indent: -1em;
+}
+
+/* Footnotes & Citations*/
+mark, mark.reference {
+    background-color: transparent;
+    font-size: smaller;
+    vertical-align: super;
+}
+div.footnotes {
+    border-top: 1px solid black;
+    margin: 1.5em 2em 0em 0em;
+    padding-top: 1.5em;
+}
+p.note {
+    margin-bottom: 1.5em;
+    padding-left: 3em;
+    text-indent: 0em;
+}
+p.cite {
+    padding-bottom: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+/* 
+Breaks 
+
+The <br/> tag creates a line break and should be used inside another element, such as a <p>. Poetry is the most common use of the <br/> tag.
+Use <div class="small-break" /> to indicate a space between elements.   
+
+*/
+div.small-break {
+    padding-top: 1em;
+}
+
+/* 
+== Columns ==
+.row:after clear floats the columns;
+ */
+.column {
+    float: left;
+    width: 50%;
+}
+.col-left {
+    float: left;
+    width: 48%;
+}
+.col-right { 
+    float: right;
+    width: 48%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
-/* In-line styles */
-.italics {
+/* 
+In-line styles:
+For acessibility, <em> (emphasis) and <strong> are preferred to <b> and <i> because they are descritive of the styling's purpose.
+When styling is not particularly meaningful, such as italicizing the titles of books, the <i> and <b> tag are appropriate. 
+
+This section also includes styling for nested changes. For example, in an italicized heading, using the <strong> tag will produce Small Caps. This simplifies the semantic markup.   
+
+*/
+span.first-word {
+    font-variant: small-caps;
+}
+.centered {
+    text-align: center;
+}
+b, em, strong.bold, span.bold {
+    font-weight: bold;
+}
+i, strong, .italics {
     font-style: italic;
-}    
+    font-weight: normal;
+}
+.small-caps {
+    font-variant: small-caps;
+}
+strong > em, h3.subtitle > strong {
+    font-variant: small-caps;
+}
+h2.subtitle > strong {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+strong.clear, em.clear {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
 
 
 .author {
@@ -53,14 +245,6 @@ div.postscript,section.postscript {
     margin-right: 0;
     margin-top: 1.5em;
     text-align: center
-    }
-.blockquote {
-    display: block;
-    font-size: 0.83333em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 1em
     }
 .blockquote1 {
     display: block;
@@ -269,14 +453,6 @@ div.postscript,section.postscript {
     margin-top: 0.8em;
     text-align: center
     }
-.footnote {
-    display: block;
-    margin-bottom: 0.4em;
-    margin-left: 2.2em;
-    margin-right: 0;
-    margin-top: 0.4em;
-    text-indent: -1.1em
-    }
 .footnote1 {
     display: block;
     margin-bottom: 0.5em;
@@ -407,14 +583,6 @@ div.postscript,section.postscript {
     margin-left: 0;
     margin-right: 0;
     margin-top: 1em
-    }
-.poem {
-    display: block;
-    margin-bottom: 1em;
-    margin-left: 14em;
-    margin-right: 0;
-    margin-top: 1em;
-    text-align: left
     }
 .publisher {
     display: block;

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="0aff933a-8561-4acf-a9ad-db2c4e8c0d26" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (3.41.3)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Pamela, Or Virtue Rewarded (A CUNY Student Edition)</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1">
+      <navLabel>
+        <text>Cover</text>
+      </navLabel>
+      <content src="001-cover.xhtml"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2">
+      <navLabel>
+        <text>Title Page</text>
+      </navLabel>
+      <content src="002-title-page.xhtml"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3">
+      <navLabel>
+        <text>Note on the Text</text>
+      </navLabel>
+      <content src="003-note-on-text.xhtml"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4">
+      <navLabel>
+        <text>Volume I</text>
+      </navLabel>
+      <content src="004-preface.xhtml#toc_1"/>
+      <navPoint id="num_5" playOrder="5">
+        <navLabel>
+          <text>Preface by the Editor</text>
+        </navLabel>
+        <content src="004-preface.xhtml#toc_2"/>
+      </navPoint>
+      <navPoint id="num_6" playOrder="6">
+        <navLabel>
+          <text>Letters 1-9</text>
+        </navLabel>
+        <content src="005-vol-1-letters-1-9.xhtml"/>
+      </navPoint>
+      <navPoint id="num_7" playOrder="7">
+        <navLabel>
+          <text>Letters 10-19</text>
+        </navLabel>
+        <content src="006-vol-1-letters-10-19.xhtml"/>
+      </navPoint>
+      <navPoint id="num_8" playOrder="8">
+        <navLabel>
+          <text>Letters 20-29</text>
+        </navLabel>
+        <content src="007-vol-1-letters-20-29.xhtml"/>
+      </navPoint>
+      <navPoint id="num_9" playOrder="9">
+        <navLabel>
+          <text>Letters 30-32</text>
+        </navLabel>
+        <content src="008-vol-1-letters-30-32.xhtml"/>
+      </navPoint>
+      <navPoint id="num_10" playOrder="10">
+        <navLabel>
+          <text>Journal - Week 1</text>
+        </navLabel>
+        <content src="009-vol-1-journal-week1.xhtml"/>
+      </navPoint>
+      <navPoint id="num_11" playOrder="11">
+        <navLabel>
+          <text>Journal - Week 2</text>
+        </navLabel>
+        <content src="010-vol1-journal-week2.xhtml"/>
+      </navPoint>
+      <navPoint id="num_12" playOrder="12">
+        <navLabel>
+          <text>Journal - Week 3</text>
+        </navLabel>
+        <content src="011-vol1-journal-week3.xhtml"/>
+      </navPoint>
+      <navPoint id="num_13" playOrder="13">
+        <navLabel>
+          <text>Journal - Week 4</text>
+        </navLabel>
+        <content src="012-vol1-journal-week4.xhtml"/>
+      </navPoint>
+      <navPoint id="num_14" playOrder="14">
+        <navLabel>
+          <text>Journal - Week 5</text>
+        </navLabel>
+        <content src="013-vol1-journal-week5.xhtml"/>
+      </navPoint>
+      <navPoint id="num_15" playOrder="15">
+        <navLabel>
+          <text>Journal - Week 6</text>
+        </navLabel>
+        <content src="014-vol1-journal-week6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_16" playOrder="16">
+      <navLabel>
+        <text>Volume II</text>
+      </navLabel>
+      <content src="015-vol2-journal-week1.xhtml"/>
+      <navPoint id="num_17" playOrder="17">
+        <navLabel>
+          <text>Journal - Week 1</text>
+        </navLabel>
+        <content src="015-vol2-journal-week1.xhtml#toc_1"/>
+      </navPoint>
+      <navPoint id="num_18" playOrder="18">
+        <navLabel>
+          <text>Journal - Week 2</text>
+        </navLabel>
+        <content src="016-vol2-journal-week2.xhtml#toc_1"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

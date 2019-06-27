@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Pamela, Or Virtue Rewarded (A CUNY Student Edition)</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Richardson, Samuel">Samuel Richardson</dc:creator>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">0aff933a-8561-4acf-a9ad-db2c4e8c0d26</dc:identifier>
+    <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (3.41.3) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">bb74ed5f-3ed1-4ec9-9c11-b95f7904e4c9</dc:identifier>
+    <meta content="{&quot;Samuel Richardson&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="CUNY Student Editions" name="calibre:series"/>
+    <meta content="1.0" name="calibre:series_index"/>
+    <meta name="calibre:title_sort" content="Pamela, Or Virtue Rewarded (A CUNY Student Edition)"/>
+  </metadata>
+  <manifest>
+    <item href="001-cover.xhtml" id="start" media-type="application/xhtml+xml"/>
+    <item href="002-title-page.xhtml" id="id3" media-type="application/xhtml+xml"/>
+    <item href="003-note-on-text.xhtml" id="id2" media-type="application/xhtml+xml"/>
+    <item href="004-preface.xhtml" id="id5" media-type="application/xhtml+xml"/>
+    <item href="005-vol-1-letters-1-9.xhtml" id="id6" media-type="application/xhtml+xml"/>
+    <item href="006-vol-1-letters-10-19.xhtml" id="id7" media-type="application/xhtml+xml"/>
+    <item href="007-vol-1-letters-20-29.xhtml" id="id8" media-type="application/xhtml+xml"/>
+    <item href="008-vol-1-letters-30-32.xhtml" id="id9" media-type="application/xhtml+xml"/>
+    <item href="009-vol-1-journal-week1.xhtml" id="id10" media-type="application/xhtml+xml"/>
+    <item href="010-vol1-journal-week2.xhtml" id="id11" media-type="application/xhtml+xml"/>
+    <item href="011-vol1-journal-week3.xhtml" id="id12" media-type="application/xhtml+xml"/>
+    <item href="012-vol1-journal-week4.xhtml" id="id13" media-type="application/xhtml+xml"/>
+    <item href="013-vol1-journal-week5.xhtml" id="id14" media-type="application/xhtml+xml"/>
+    <item href="014-vol1-journal-week6.xhtml" id="id15" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="styles.css" id="id" media-type="text/css"/>
+    <item href="CUNY-imprint-pigeon.png" id="id4" media-type="image/png"/>
+    <item href="pamela-cover.jpg" id="id1" media-type="image/jpeg"/>
+    <item href="015-vol2-journal-week1.xhtml" id="id16" media-type="application/xhtml+xml"/>
+    <item href="016-vol2-journal-week2.xhtml" id="id17" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="start"/>
+    <itemref idref="id3"/>
+    <itemref idref="id2"/>
+    <itemref idref="id5"/>
+    <itemref idref="id6"/>
+    <itemref idref="id7"/>
+    <itemref idref="id8"/>
+    <itemref idref="id9"/>
+    <itemref idref="id10"/>
+    <itemref idref="id11"/>
+    <itemref idref="id12"/>
+    <itemref idref="id13"/>
+    <itemref idref="id14"/>
+    <itemref idref="id15"/>
+    <itemref idref="id16"/>
+    <itemref idref="id17"/>
+  </spine>
+  <guide/>
+</package>

@@ -37,19 +37,35 @@ h4 {
     font-size: 1em;
     margin: 1.33em 0;
 }
-.subtitle {
+.sub-heading {
     font-style: italic;
     font-size: 1.17em;
     margin: 0em auto 1em;
 }
 
-/* ==Start Page (Cover Image) == */
+/* ==Start Page (Cover) & Title Page== */
 img.cover-image {
   margin: 0em auto 0em;
 }
+.main-title {
+  font-size: 3.5em;
+  line-height: 1em;
+}
+.subtitle {
+  font-size 3em;
+  line-height: 1em;
+  margin: -1em auto 1.5em;
+}
+.author {
+  font-size: 2em;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0em auto 1.5em;
+}
+
 .imprint {
   display: block;
-  margin: 4em auto 1em;
+  margin: 4em auto .5em;
 }
 .banner {
   border-top: 0.25em double;

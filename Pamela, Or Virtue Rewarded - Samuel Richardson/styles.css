@@ -40,6 +40,7 @@ h4 {
 .sub-heading {
     font-style: italic;
     font-size: 1.17em;
+    font-weight: inherit;
     margin: 0em auto 1em;
 }
 
@@ -79,7 +80,7 @@ img.cover-image {
 .preface {
   font-style: italic;
 }
-.preface > strong {
+.preface > em {
   font-style: normal;
   font-weight: 400;
 }
@@ -156,7 +157,7 @@ div.stanza-italics > p {
     padding-left: 1em;
     white-space: pre-wrap;
 }
-div.stanza-italics strong {
+div.stanza-italics em {
     font-style: normal;
     text-indent: -1em;
 }
@@ -179,7 +180,7 @@ div.letter {
     margin-bottom: 1em;
     text-align: right;
 }
-.signature strong, .salutation strong {
+.signature em, .salutation em {
     font-variant: small-caps;
 }
 div.postscript {
@@ -245,9 +246,9 @@ div.small-break {
 
 /* 
 In-line styles:
-For acessibility, <em> (emphasis) and <strong> are preferred to <b> and <i> because they are descritive of the styling's purpose.
+For acessibility, <em> (emphasis) and <strong> are preferred to <i> and <b> because they are descritive of the styling's purpose.
 When styling is not particularly meaningful, such as italicizing the titles of books, the <i> and <b> tag are appropriate. 
-This section also includes styling for nested changes. For example, in an italicized heading, using the <strong> tag will produce Small Caps. This simplifies the semantic markup.   
+This section also includes styling for nested changes. For example, in an italicized heading, using the <em> tag will produce Small Caps. This simplifies the semantic markup.   
 */
 span.first-word {
     font-variant: small-caps;
@@ -255,10 +256,10 @@ span.first-word {
 .centered {
     text-align: center;
 }
-b, em, strong.bold, span.bold {
+b, strong, span.bold {
     font-weight: 700;
 }
-i, strong, .italics {
+i, em, .italics {
     font-style: italic;
     font-weight: 400;
 }
@@ -268,7 +269,7 @@ i, strong, .italics {
 strong > em, h3.subtitle > strong {
     font-variant: small-caps;
 }
-h2.subtitle > strong {
+h2.subtitle > em {
     font-variant: small-caps;
     font-weight: bold;
 }
